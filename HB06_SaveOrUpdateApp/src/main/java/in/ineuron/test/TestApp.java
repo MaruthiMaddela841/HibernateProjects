@@ -24,7 +24,7 @@ public class TestApp {
 			}
 			if(transaction!=null) {
 				Student student=new Student();
-				student.setSid(2);
+				student.setSid(5);
 				student.setSname("MM");
 				student.setSage(24);
 				student.setSaddress("BPL");
@@ -42,7 +42,7 @@ public class TestApp {
 		}
 		finally {
 			if(flag) {
-				System.in.read();
+				//System.in.read();
 				transaction.commit();
 				System.out.println("Object updated to DB");
 			}

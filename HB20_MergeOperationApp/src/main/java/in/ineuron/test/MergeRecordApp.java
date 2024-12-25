@@ -6,7 +6,7 @@ import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
-import in.ineuron.model.Student;
+import in.ineuron.model.StudentRecords;
 import in.ineuron.util.HibernateUtil;
 
 public class MergeRecordApp {
@@ -16,10 +16,10 @@ public class MergeRecordApp {
 		Session session=null;
 		Transaction transaction=null;
 		boolean flag=false;
-		Student std=null;
+		StudentRecords std=null;
 		
 		try {
-			Student student=new Student();
+			StudentRecords student=new StudentRecords();
 			student.setSid(4);
 			student.setSaddress("HYD");
 			student.setSage(29);
@@ -29,7 +29,8 @@ public class MergeRecordApp {
 				transaction=session.beginTransaction();
 			}
 			if(transaction!=null) {
-				std=(Student) session.merge(student);
+				std=(StudentRecords) session.merge(student);
+				System.out.println(std);
 				flag=true;
 				
 			}

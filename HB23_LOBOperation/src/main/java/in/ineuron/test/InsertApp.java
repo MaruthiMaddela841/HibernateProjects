@@ -25,7 +25,7 @@ public class InsertApp {
 		File file=null;
 		try (FileInputStream fis = new FileInputStream("D:\\iNeuron\\pic.jpg")) {
 			photo = new byte[fis.available()];
-			fis.read();
+			fis.read(photo);
 		}
 		try{
 			file=new File("D:\\iNeuron\\test.pdf");

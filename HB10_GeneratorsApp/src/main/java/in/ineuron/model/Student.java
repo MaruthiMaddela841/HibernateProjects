@@ -13,6 +13,7 @@ import org.hibernate.annotations.GenericGenerator;
 public class Student {
 		@Id
 		@Column(name="stdId")
+//		@GenericGenerator(name="gen1",strategy="assigned")
 //		@GenericGenerator(name="gen1",strategy="increment")
 //		@GenericGenerator(name="gen1",strategy="sequence")
 		@GenericGenerator(name="gen1",strategy="identity")

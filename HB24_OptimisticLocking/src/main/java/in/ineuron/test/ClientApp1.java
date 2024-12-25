@@ -15,7 +15,7 @@ public class ClientApp1 {
 		
 		Session session=null;
 		Transaction transaction = null;
-		Integer id=2;
+		Long id=2L;
 		Boolean flag=false;
 		
 		try {
@@ -27,7 +27,7 @@ public class ClientApp1 {
 				PolicyInfo pi=session.get(PolicyInfo.class, id);
 				System.out.println(pi);
 				Thread.sleep(30000);
-				pi.setPolicyType("Monthly");
+				pi.setPolicyType("Daily");
 				flag=true;
 			}
 			

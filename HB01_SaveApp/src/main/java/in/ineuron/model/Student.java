@@ -46,5 +46,4 @@ public class Student {
 		public void setSage(Integer sage) {
 			this.sage = sage;
 		}
-
 }

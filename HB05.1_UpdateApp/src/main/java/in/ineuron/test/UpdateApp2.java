@@ -29,7 +29,7 @@ public class UpdateApp2 {
 				if(student!=null) {
 					System.out.println(student);
 					System.in.read();
-					student.setSname("MMM");
+					student.setSname("Maruthi");
 					session.update(student);
 					flag=true;
 				}

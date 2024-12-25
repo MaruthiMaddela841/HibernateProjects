@@ -23,10 +23,10 @@ public class SaveApp {
 			}
 			if(transaction!=null) {
 				Student student=new Student();
-				student.setSid(2);
-				student.setSname("Maru");
-				student.setSage(23);
-				student.setSaddress("MNCL");
+				student.setSid(4);
+				student.setSname("Maruthi");
+				student.setSage(26);
+				student.setSaddress("Rkp");
 				id=(Integer)session.save(student);
 				flag=true;
 				

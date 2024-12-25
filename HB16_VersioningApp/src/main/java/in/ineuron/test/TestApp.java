@@ -30,7 +30,9 @@ public class TestApp {
 				customer.setMobileNo(123456789);
 				customer.setCallerTune("Titanic");
 				id=(Integer) session.save(customer);
-				
+//				customer=session.get(MobileCustomer.class,2);
+//				customer.setCname("dhonisingh");
+//				session.update(customer);
 				flag=true;
 			}
 			

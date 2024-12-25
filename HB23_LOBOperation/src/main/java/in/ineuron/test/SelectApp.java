@@ -24,7 +24,8 @@ public class SelectApp {
 			js=session.get(JobSeeker.class, id);
 			if(js!=null) {
 				System.out.println(js);
-				try(FileOutputStream fos= new FileOutputStream("./store/pic.jpg");FileWriter fw= new FileWriter("./store/test.pdf")) {
+				try(FileOutputStream fos= new FileOutputStream("./store/pic.jpg");
+						FileWriter fw= new FileWriter("./store/test.pdf")) {
 					fos.write(js.getPhoto());
 					fw.write(js.getResume());
 		

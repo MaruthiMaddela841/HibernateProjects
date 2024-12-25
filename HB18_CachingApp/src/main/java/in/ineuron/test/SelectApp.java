@@ -34,7 +34,7 @@ public class SelectApp {
 			
 			policy=session.get(InsurancePolicy.class, 1L);
 			System.out.println(policy);
-			System.out.println("-------------------------------");//from l1 cache
+			System.out.println("-------------------------------");// from DB to L1 cache
 			
 			session.clear();
 

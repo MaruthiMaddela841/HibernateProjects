@@ -16,7 +16,7 @@ public class ClientApp2 {
 		
 		Session session=null;
 		Transaction transaction = null;
-		Integer id=2;
+		Long id=2L;
 		Boolean flag=false;
 		
 		try {
@@ -27,7 +27,7 @@ public class ClientApp2 {
 			if (transaction != null) {
 				PolicyInfo pi=session.get(PolicyInfo.class, id,LockMode.UPGRADE_NOWAIT);
 				System.out.println(pi);
-				pi.setPolicyType("Daily");
+				pi.setPolicyType("Monthly");
 				flag=true;
 			}
 			

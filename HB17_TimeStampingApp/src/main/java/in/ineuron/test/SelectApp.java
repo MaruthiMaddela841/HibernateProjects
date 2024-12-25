@@ -14,7 +14,7 @@ public class SelectApp {
 	public static void main(String[] args) throws IOException {
 		
 		Session session=null;
-		Long id=1L;
+		Long id=4490L;
 		Transaction transaction=null;
 		Boolean flag=false;
 		BankAccount account=null;
@@ -24,9 +24,9 @@ public class SelectApp {
 			System.out.println("Before modifying:"+account);
 			if(account!=null) {
 				transaction=session.beginTransaction();
-				account.setHolderName("Maruthi");;
+				account.setHolderName("Maru");
+				session.update(account);
 				flag=true;
-				
 			}
 			else {
 				System.out.println("Record Not Found");

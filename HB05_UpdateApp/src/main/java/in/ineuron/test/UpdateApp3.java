@@ -30,6 +30,7 @@ public class UpdateApp3 {
 					System.out.println(student);
 					System.in.read();
 					student.setSname("Maru");
+					session.saveOrUpdate(student);
 					flag=true;
 				}
 				else {

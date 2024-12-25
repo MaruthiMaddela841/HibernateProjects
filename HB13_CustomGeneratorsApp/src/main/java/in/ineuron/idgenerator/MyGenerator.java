@@ -18,7 +18,6 @@ public class MyGenerator implements IdentifierGenerator {
 	@Override
 	public Serializable generate(SharedSessionContractImplementor si, Object obj) throws HibernateException {
 		System.out.println("Studentgenerator generate()");
-		System.out.println("Studentgenerator generate()");
 		String date=new SimpleDateFormat("yyyy-mm-dd").format(new Date());
 		int num=new Random().nextInt(1000);
 		return "Maru"+date+"-"+num;

@@ -16,11 +16,11 @@ public class DeleteApp2 {
 		Session session = null;
 		Transaction transaction = null;
 		boolean flag = false;
-		Integer id = 2;
+		Integer id = 3;
 
 		try {
 			session = HibernateUtil.getSession();
-			Student student = session.get(Student.class, 2);
+			Student student = session.get(Student.class, id);
 			if (session != null) {
 				transaction = session.beginTransaction();
 			}

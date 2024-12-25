@@ -1,4 +1,4 @@
-package in.ineuron.test;
+ package in.ineuron.test;
 
 import java.io.IOException;
 
@@ -6,7 +6,7 @@ import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
-import in.ineuron.model.Student;
+import in.ineuron.model.StudentRecords;
 import in.ineuron.util.HibernateUtil;
 
 public class LoadAndMergeApp {
@@ -16,25 +16,25 @@ public class LoadAndMergeApp {
 		Session session=null;
 		Transaction transaction=null;
 		boolean flag=false;
-		Student std1=null;
-		Student std2=null;
-		Student std3=null;
+		StudentRecords std1=null;
+		StudentRecords std2=null;
+		StudentRecords std3=null;
 		
 		try {
 			session=HibernateUtil.getSession();
 			
 			if(session!=null) {
-				std1=session.get(Student.class, 4);
+				std1=session.get(StudentRecords.class, 1);
 				System.out.println("STD1:"+std1);
 				transaction=session.beginTransaction();
 			}
 			if(transaction!=null) {
-				std2=new Student();
-				std2.setSid(4);
+				std2=new StudentRecords();
+				std2.setSid(2);
 				std2.setSaddress("WGL");
 				std2.setSage(30);
-				std2.setSname("Raj");
-				std3=(Student) session.merge(std2);
+				std2.setSname("Rajesh");
+				std3=(StudentRecords) session.merge(std2);
 				System.out.println("STD3:"+std3);
 				System.out.println(std1.hashCode()+":"+std2.hashCode()+":"+std3.hashCode());
 				flag=true;

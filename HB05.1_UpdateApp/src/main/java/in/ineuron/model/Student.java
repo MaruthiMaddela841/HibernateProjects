@@ -49,5 +49,11 @@ public class Student {
 		public void setSage(Integer sage) {
 			this.sage = sage;
 		}
+		@Override
+		public String toString() {
+			return "Student [sid=" + sid + ", sname=" + sname + ", saddress=" + saddress + ", sage=" + sage + "]";
+		}
+		
+		
 
 }

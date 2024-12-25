@@ -24,7 +24,7 @@ public class DeleteApp1 {
 			}
 			if(transaction!=null) {
 				Student student=new Student();
-				student.setSid(2);
+				student.setSid(5);
 				session.delete(student);
 				flag=true;
 				

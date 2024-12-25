@@ -6,7 +6,7 @@ import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
-import in.ineuron.model.Student;
+import in.ineuron.model.StudentRecords;
 import in.ineuron.util.HibernateUtil;
 
 public class InsertApp {
@@ -23,7 +23,7 @@ public class InsertApp {
 				transaction=session.beginTransaction();
 			}
 			if(transaction!=null) {
-				Student student=new Student();
+				StudentRecords student=new StudentRecords();
 				student.setSname("Maruthi");
 				student.setSage(27);
 				student.setSaddress("MNCL");

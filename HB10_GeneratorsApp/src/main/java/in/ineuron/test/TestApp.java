@@ -26,7 +26,7 @@ public class TestApp {
 			if(transaction!=null) {
 				Student student=new Student();
 				student.setSname("Maru");
-				student.setSage(25);
+				student.setSage(26);
 				student.setSaddress("MM");
 				id=(Integer)session.save(student);
 				flag=true;

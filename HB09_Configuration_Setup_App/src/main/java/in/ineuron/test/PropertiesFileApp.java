@@ -1,8 +1,8 @@
 package in.ineuron.test;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.util.Properties;
 
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
@@ -17,9 +17,8 @@ public class PropertiesFileApp {
 		Session session = null;
 
 		try {
-
 			Configuration configuration = new Configuration();// by default searches for hibernate.properties file
-//			FileInputStream fis= new FileInputStream(file);
+//			FileInputStream fis= new FileInputStream(new File("src\\main\\java\\hibernate.properties"));
 //			Properties properties= new Properties();
 //			properties.load(fis);
 //			configuration.setProperties(properties);

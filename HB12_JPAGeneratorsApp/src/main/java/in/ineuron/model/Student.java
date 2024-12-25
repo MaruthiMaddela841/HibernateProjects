@@ -11,7 +11,7 @@ import javax.persistence.Id;
 public class Student {
 		@Id
 		@GeneratedValue(strategy=GenerationType.AUTO)
-		//@SequenceGenerator(name="gen1",sequenceName="JPA_SID_SEQ",inititalValue=5,allocationSize=5)->for orcale
+		//@SequenceGenerator(name="gen1",sequenceName="JPA_SID_SEQ",inititalValue=5,allocationSize=5)->for oracle
 		//@GeneratedValue(generator="gen1",strategy=GenerationType.SEQUENCE)-> for oracle
 		private Integer sid;
 		@Column(name="stdName",length=20)
@@ -54,7 +54,4 @@ public class Student {
 			// TODO Auto-generated method stub
 			return "ID:"+sid+",SNAME:"+sname+",ADDR:"+saddress+",SAGE"+sage;
 		}
-		
-		
-
 }

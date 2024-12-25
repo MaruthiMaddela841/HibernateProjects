@@ -29,7 +29,6 @@ public class TestApp {
 				account.setBalance(333444555.5);
 				account.setHolderName("Maru");
 				account.setType("savings");
-				
 				id=(Long) session.save(account);
 				flag=true;
 			}

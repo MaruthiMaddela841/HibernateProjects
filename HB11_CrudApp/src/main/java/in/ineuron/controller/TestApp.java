@@ -57,11 +57,11 @@ public class TestApp {
 	private static void updateRecordThroughStudentObject() throws IOException {
 		IStudentService studentService=StudentServiceFactory.getStudentService();
 		//Scanner sc= new Scanner(System.in);
+		//Integer id=sc.nextInt();
+		//Student student=studentService.searchStudent(id);
 		BufferedReader br= new BufferedReader(new InputStreamReader(System.in));
 		System.out.print("Enter Id of the Student to be Updated:");
-		//Integer id=sc.nextInt();
 		String id=br.readLine();
-		//Student student=studentService.searchStudent(id);
 		Student student=studentService.searchStudent(Integer.parseInt(id));
 		Student newStudent= new Student();
 		if(student!=null) {

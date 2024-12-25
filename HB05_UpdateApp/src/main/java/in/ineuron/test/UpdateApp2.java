@@ -47,7 +47,7 @@ public class UpdateApp2 {
 		}
 		finally {
 			if(flag) {
-				System.in.read();
+				//System.in.read();
 				transaction.commit();
 				System.out.println("Object updated to DB");
 			}

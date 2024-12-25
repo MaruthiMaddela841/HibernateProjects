@@ -27,10 +27,9 @@ public class UpdateApp1 {
 				student.setSid(1);
 				student.setSname("MM");
 				student.setSage(24);
-				student.setSaddress("RGM 	");
+				student.setSaddress("RGM");
 				session.update(student);
 				flag=true;
-				
 			}
 			
 		}
@@ -42,7 +41,7 @@ public class UpdateApp1 {
 		}
 		finally {
 			if(flag) {
-				System.in.read();
+				//System.in.read();
 				transaction.commit();
 				System.out.println("Object updated to DB");
 			}

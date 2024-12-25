@@ -23,7 +23,7 @@ public class SaveApp {
 			}
 			if(transaction!=null) {
 				Student student=new Student();
-				student.setSid(2);
+				student.setSid(3);
 				student.setSname("Maru");
 				student.setSage(23);
 				student.setSaddress("MNCL");
