@@ -7,7 +7,7 @@ import org.hibernate.Transaction;
 import in.ineuron.model.Student;
 import in.ineuron.util.HibernateUtil;
 
-public class PersistApp {
+public class GetApp {
 
 	public static void main(String[] args) {
 		
